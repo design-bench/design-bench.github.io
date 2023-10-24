@@ -317,7 +317,7 @@
         <div class="content has-text-centered">
           <p>
             <b> Please see <a href="https://docs.google.com/spreadsheets/d/1978ogNzkxW77uGvhQvcYfH8KUzZ-omd1pSrwD3IrNHc/edit?usp=sharing" target="popup"> Google Sheet</a> for DEsignBench prompts, or using this 
-              <a href="https://design-bench.github.io/DesignBench_Prompts.tsv" target="popup" download> backup downloading</a> link.
+              <a href="https://design-bench.github.io/DesignBench_Prompts.tsv" target="popup" download> backup downloading</a> link, or <br><code>wget https://unitab.blob.core.windows.net/data/designbench/DesignBench_Prompts.tsv</code>
           </p>
         </div>        
        </h2>
@@ -342,7 +342,11 @@
         <h2 id="gallery" class="title is-3">DEsignBench Gallery (Coming Soon)</h2>
         <h3 class="subtitle has-text-centered">
             <br>
-            Please follow the instructions to download all images in DEsignBench Gallery (Coming Soon).
+            Please follow the azcopy instructions to download all images in DEsignBench Gallery. 
+            <br> AzCopy executable tools can be <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10#download-azcopy" target="popup">[downloaded here]</a>.
+            <br> Then run the downloading: <code>path/to/azcopy copy https://unitab.blob.core.windows.net/data/designbench [local_path] --recursive</code>
+            <br> Add subfolder name <code>firefly2</code>, <code>ideogram</code>, <code>SDXL</code>, <code>Midjourney</code>, or <code>dalle3</code> after <code>data/designbench</code> to download images from a specific model.
+
             <!-- <p style="color: #00A4EF">Click each panel below for the zoomed in view.</p> -->
         </h3>  
         <br>
